@@ -1,0 +1,173 @@
+<br>
+<br>
+<center>
+  <h1>
+    <b>
+      Sobre Nosotros 
+    </b>
+  </h1>
+  <div id="about-us-text">Nuestra misión es lo que nos impulsa a hacer todo lo posible para expandir el potencial humano. Lo hacemos creando innovaciones deportivas innovadoras, haciendo que nuestros productos sean más sostenibles, construyendo un equipo global creativo y diverso y teniendo un impacto positivo en las comunidades donde vivimos y trabajamos.</div>
+</center>
+<br><br>
+<div class="container py-5">
+  <div class="time-line">
+    <div class="time-line__section">
+      <div class="section__date">
+        <div class="date__box">
+          <div class="box__carret"></div>
+          <div class="box__icon">
+            <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+          </div>
+          <div class="box__date">
+            <span>1997</span>
+          </div>
+        </div>
+      </div>
+      <div class="section__description">
+        <h1>Se ignauró</h1>
+        <p class="lead">Alejandro's Sport, antes llamada "Crazy people"</p>
+      </div>
+    </div>
+    <div class="time-line__section">
+      <div class="section__date">
+        <div class="date__box">
+          <div class="box__carret"></div>
+          <div class="box__icon">
+            <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+          </div><div class="box__date">
+            <span>1999</span>
+          </div>
+        </div>
+      </div>
+      <div class="section__description">
+        <h1>Cambio de Nombre</h1>
+        <p class="lead">Se cambio el Nombre al actual, "Alejandros Sport"</p>
+      </div>
+    </div>
+    <div class="time-line__section">
+      <div class="section__date">
+        <div class="date__box">
+          <div class="box__carret"></div>
+          <div class="box__icon">
+            <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+          </div><div class="box__date">
+            <span>2001</span>
+          </div>
+        </div>
+      </div>
+      <div class="section__description">
+        <h1>Cambio de Local</h1>
+        <p class="lead">Alejandro's Sport se traslado hacia donde hoy en dias es el hotel internacional</p>
+      </div>
+    </div>
+    <div class="time-line__section">
+      <div class="section__date">
+        <div class="date__box">
+          <div class="box__carret"></div>
+          <div class="box__icon">
+            <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+          </div><div class="box__date">
+            <span>2010-Actual</span>
+          </div>
+        </div>
+      </div>
+      <div class="section__description">
+        <h1>Unica Tienda de deportes</h1>
+        <p class="lead">Unica tienda que tiene solamente producto deportivo en ocotepeque.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .time-line .time-line__section {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-bottom: 70px;
+}
+.time-line .time-line__section .section__date {
+  width: 50%;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 50px 0 0;
+}
+.time-line .time-line__section .section__date .date__box {
+  box-shadow: 20px 20px 100px 0px #555;
+  position: relative;
+  display: flex;
+}
+.time-line .time-line__section .section__date .date__box .box__carret {
+  width: 0;
+  height: 0;
+  border-top: 0px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 10px solid #1187c5;
+  position: absolute;
+  left: 100%;
+  top: 0;
+}
+.time-line .time-line__section .section__date .date__box .box__icon, .time-line .time-line__section .section__date .date__box .box__date {
+  font-size: 4rem;
+  font-weight: bold;
+  padding: 30px 20px;
+  text-align: center;
+}
+.time-line .time-line__section .section__date .date__box .box__icon {
+  background: #094767;
+  color: #1187c5;
+}
+.time-line .time-line__section .section__date .date__box .box__date {
+  background: #1187c5;
+  color: #fff;
+  flex-grow: 1;
+}
+.time-line .time-line__section .section__description {
+  align-self: flex-start;
+  width: 50%;
+  padding: 0 0 0 50px;
+}
+.time-line .time-line__section:before {
+  content: "";
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  background: #fff;
+  border: 5px solid #99a833;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%) translateY(-50%);
+  border-radius: 50%;
+  z-index: 1;
+}
+.time-line .time-line__section:after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 5px;
+  background: #99a833;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%);
+}
+.time-line .time-line__section:nth-child(even) .section__date {
+  padding: 0 0 0 50px;
+  order: 1;
+}
+.time-line .time-line__section:nth-child(even) .section__date .date__box .box__carret {
+  border-left: 0px solid transparent;
+  border-top: 0px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-right: 10px solid #1187c5;
+  position: absolute;
+  left: auto;
+  right: 100%;
+}
+.time-line .time-line__section:nth-child(even) .section__date .date__box .box__icon {
+  order: 1;
+}
+.time-line .time-line__section:nth-child(even) .section__description {
+  text-align: right;
+  padding: 0 50px 0 0;
+}
+</style>
