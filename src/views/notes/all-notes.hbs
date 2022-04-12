@@ -1,0 +1,48 @@
+
+<!--Inicio de imagenes-->
+<br><br>
+
+  <div class="container">   
+    <div class="row">
+
+       {{#each notes}}
+       
+      <div>
+       
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+         
+          <div class="card-body d-flex flex-column">
+
+           
+          
+            <h1 class="card-body">{{title}}<i class="fas fa-edit"></i></h1>
+                
+            <p class="card-text mb-4"> {{description}} </p>
+            <form action="/notes/delete/{{_id}}?_method=DELETE" method="POST">
+                <input type="hidden" name="_method" value="DELETE">
+                <button class="btn btn-danger btn-block btn-sm" type="submit">
+                    BORRAR
+                </button>
+            </form>
+            <a href="notes/edit/{{_id}}" style="text-decoration: none;"><button class="btn btn-warning btn-block btn-sm"  type="submit">
+                    EDITAR
+                </button></a>
+          </div>
+        </div>
+      </div>  
+      {{else}}
+      <div class="card mx-auto">
+          <div class="card-body">
+              <p class="lead"> Da tu Sugerencia</p>
+              <a href="/notes/add" class="btn btn-success btn-block">Crear Sugerencia</a>
+          </div>
+      </div>
+
+      {{/each}}
+      
+
+    </div>
+  </div>
+  <br><br>
